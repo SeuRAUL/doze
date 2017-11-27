@@ -39,14 +39,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.1]
     # add_index :users, :confirmation_token,   unique: true
     # add_index :users, :unlock_token,         unique: true
 
-    
-    # Initialize first account:
-    User.create! do |u|
-      u.email     = 'admin@doze.com'
-      u.password  = 'admin12'
-      u.doze_role = true
-    end
-
 
   end
 end

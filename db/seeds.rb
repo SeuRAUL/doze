@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+  # Initialize first account:
+  User.create! do |u|
+    u.email     = 'admin@doze.com'
+    u.password  = 'admin12'
+    u.doze_role = true
+  end
